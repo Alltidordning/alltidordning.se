@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Alltid Ordning – Uthyrning utan stress. Allt i ordning.</title>
+  <meta name="description" content="Vi hjälper värdar i Roslagen och norrort med bokningar, städning, nycklar och gästkontakt. Uthyrning utan stress – Allt i ordning.">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Vi sköter bokningar, städning, nycklar och gästkontakt för värdar i Roslagen och norrort. Uthyrning utan stress – Allt i ordning.">
 </head>
 <body>
 
+<!-- ===== Header / Hero ===== -->
 <header class="site-header">
   <div class="container nav">
     <div>
@@ -18,7 +19,7 @@
     </div>
     <nav>
       <a class="btn btn-ghost" href="om-oss.html">Om oss</a>
-      <a class="btn btn-ghost" href="prisexempel.html">Prisexempel</a>
+      <a class="btn btn-ghost" href="prisexempel.html">Tjänster & priser</a>
       <a class="btn btn-primary" href="kontakt.html">Kontakta oss</a>
     </nav>
   </div>
@@ -28,33 +29,159 @@
     <p>Vi sköter bokningar, städning, nycklar och gästkontakt. Du får mer tid – gästerna får allt i ordning.</p>
     <div class="actions">
       <a class="btn btn-primary" href="kontakt.html">Boka ett samtal</a>
-      <a class="btn btn-ghost" href="prisexempel.html">Se våra priser</a>
+      <a class="btn btn-ghost" href="#tjanster">Se vad som ingår</a>
     </div>
   </div>
 </header>
 
-<main class="container section">
-  <div class="callout">Uthyrning utan stress. Allt i ordning.</div>
-  <div class="section">
-    <div class="grid">
-      <article class="card">
-        <h3>Bokningshantering</h3>
-        <p>Förfrågningar, kalender, prissättning och kommunikation – vi sköter flödet.</p>
-      </article>
-      <article class="card">
-        <h3>Städ & Inspektion</h3>
-        <p>Checklista före/efter gäst. Kvalitetssäkrat och dokumenterat.</p>
-      </article>
-      <article class="card">
-        <h3>Nyckel & Incheckning</h3>
-        <p>Nyckelutlämning, kodlås eller nyckelbox – smidigt och tryggt.</p>
-      </article>
-      <article class="card">
-        <h3>Gästkontakt</h3>
-        <p>Snabb återkoppling, tydliga instruktioner och nöjda gäster.</p>
-      </article>
+<main>
+
+  <!-- ===== Tjänster – teaser ===== -->
+  <section class="container section" id="tjanster">
+    <div class="callout">Uthyrning utan stress. Allt i ordning.</div>
+    <div class="section">
+      <div class="grid">
+        <article class="card">
+          <h3>Bokningshantering</h3>
+          <p>Förfrågningar, kalender, prissättning och kommunikation – vi sköter flödet.</p>
+        </article>
+        <article class="card">
+          <h3>Städ & Inspektion</h3>
+          <p>Checklista före/efter gäst. Kvalitetssäkrat och dokumenterat.</p>
+        </article>
+        <article class="card">
+          <h3>Nyckel & Incheckning</h3>
+          <p>Nyckelutlämning, kodlås eller nyckelbox – smidigt och tryggt.</p>
+        </article>
+        <article class="card">
+          <h3>Gästkontakt</h3>
+          <p>Snabb återkoppling, tydliga instruktioner och nöjda gäster.</p>
+        </article>
+      </div>
+      <div style="margin-top:20px;">
+        <a class="btn btn-primary" href="prisexempel.html">Visa alla tjänster & priser</a>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- ===== Kundreferenser ===== -->
+  <section class="section" style="background:var(--col-accent);border-top:1px solid var(--col-line);border-bottom:1px solid var(--col-line);">
+    <div class="container">
+      <h2 style="font-family:Poppins, sans-serif; color:var(--col-primary-dark); margin-top:0;">Vad säger värdar?</h2>
+      <div class="grid">
+        <!-- Anton -->
+        <article class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+            <img src="bilder/anton.jpg" alt="Anton – Mariestad" style="width:56px;height:56px;border-radius:50%;object-fit:cover;">
+            <div>
+              <strong>Anton</strong><br><span style="color:var(--col-text-2);font-size:14px;">Mariestad</span>
+            </div>
+          </div>
+          <p>“Starten gick snabbt och strukturerat. Jag blev Superhost på kort tid – tack vare ordning, proaktiva tips och snabb gästkommunikation.”</p>
+          <div style="color:#F5A524; font-size:18px;">★★★★★</div>
+        </article>
+
+        <!-- Filip -->
+        <article class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+            <img src="bilder/filip.jpg" alt="Filip – Karlsborg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;">
+            <div>
+              <strong>Filip</strong><br><span style="color:var(--col-text-2);font-size:14px;">Karlsborg</span>
+            </div>
+          </div>
+          <p>“Började med deras tjänster för ett boende på landet. Skalade upp till tre och har nu rutiner så jag kan drifta allt själv. Superstart och smarta arbetssätt.”</p>
+          <div style="color:#F5A524; font-size:18px;">★★★★★</div>
+        </article>
+      </div>
+
+      <div style="margin-top:20px;">
+        <a class="btn btn-ghost" href="kontakt.html">Vill du också få ett enklare liv som värd?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Priser – inbäddat utdrag ===== -->
+  <section class="pricing" id="priser">
+    <div class="container">
+      <h2>Tjänster & priser</h2>
+      <div class="pricing-grid">
+
+        <!-- Bas -->
+        <div class="pricing-card">
+          <h3>Bas</h3>
+          <p class="users">Bokning & gästkontakt</p>
+          <p class="price">10–12% <span>/ per bokning</span></p>
+          <a class="btn ghost" href="kontakt.html">Boka samtal</a>
+          <ul>
+            <li>Gästkommunikation 08–20</li>
+            <li>Kalender & prissättning</li>
+            <li>Annonsoptimering</li>
+            <li>Veckorapport</li>
+          </ul>
+        </div>
+
+        <!-- Standard -->
+        <div class="pricing-card popular">
+          <div class="ribbon">Populär</div>
+          <h3>Standard</h3>
+          <p class="users">Bokning, städ & besiktning</p>
+          <p class="price">15–17% <span>/ per bokning</span></p>
+          <a class="btn primary" href="kontakt.html">Boka samtal</a>
+          <ul>
+            <li>Allt i Bas</li>
+            <li>Städ & mellanbesiktning</li>
+            <li>Lagerpåfyllnad</li>
+            <li>Gästguide</li>
+          </ul>
+        </div>
+
+        <!-- Fullservice -->
+        <div class="pricing-card">
+          <h3>Fullservice</h3>
+          <p class="users">Nyckelklart – allt ingår</p>
+          <p class="price">18–20% <span>/ per bokning</span></p>
+          <a class="btn ghost" href="kontakt.html">Boka samtal</a>
+          <ul>
+            <li>Allt i Standard</li>
+            <li>Nyckelhantering</li>
+            <li>Jour 07–22</li>
+            <li>Leverantörssamordning</li>
+            <li>Prisdynamik & optimering</li>
+          </ul>
+        </div>
+
+        <!-- Tillägg -->
+        <div class="pricing-card">
+          <h3>Tillägg</h3>
+          <p class="users">Styckvis / engång</p>
+          <p class="price">Enligt prislista</p>
+          <a class="btn ghost" href="kontakt.html">Fråga oss</a>
+          <ul>
+            <li>Listing‑setup (text & bildurval)</li>
+            <li>Fotografering</li>
+            <li>Linne & tvätt (per set)</li>
+            <li>Djurstäd / djuprengöring</li>
+            <li>Kodlås/nyckelbox – installation & drift</li>
+          </ul>
+        </div>
+
+      </div>
+      <p style="margin-top:16px;color:var(--col-text-2);font-size:.95rem;">
+        Städ, linne och förbrukning debiteras separat (pass‑through). Hybridmodell möjlig: låg fast avgift + lägre procent.
+        &nbsp; <a href="prisexempel.html">Visa alla detaljer & prisexempel →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:Poppins,sans-serif;color:var(--col-primary-dark);margin:0 0 10px 0;">Redo för ett enklare värdskap?</h2>
+      <p style="margin:0 0 16px 0;color:var(--col-text-2);">Boka ett kostnadsfritt samtal så går vi igenom ditt boende och vad som passar bäst.</p>
+      <a class="btn btn-primary" href="kontakt.html">Boka gratis rådgivning</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
