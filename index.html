@@ -7,27 +7,25 @@
   <meta name="description" content="Vi hjälper värdar i Roslagen och norrort med bokningar, städning, nycklar och gästkontakt. Uthyrning utan stress – Allt i ordning.">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- KARTA (responsiv) -->
-  <style>
-    .map-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;border:1px solid var(--col-line);box-shadow:var(--shadow)}
-    .map-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-  </style>
 </head>
 <body>
 
-<!-- ===== Header / Hero ===== -->
 <header class="site-header">
   <div class="container nav">
-    <div>
-      <div class="brand">Alltid Ordning</div>
-      <div class="tagline">Uthyrning utan stress. Allt i ordning.</div>
-    </div>
+    <a class="brand" href="index.html">Alltid Ordning</a>
     <nav>
       <a class="btn btn-ghost" href="om-oss.html">Om oss</a>
       <a class="btn btn-ghost" href="prisexempel.html">Tjänster & priser</a>
-      <a class="btn btn-ghost" href="#omrade">Område</a>
-      <a class="btn btn-primary" href="kontakt.html">Kontakta oss</a>
+      <a class="btn btn-ghost" href="omrade.html">Område</a>
+      <a class="btn btn-primary" href="boka-samtal.html">Boka samtal</a>
     </nav>
+  </div>
+
+  <div class="announce">
+    <div class="container">
+      <span>Just nu: Prioriterad uppstart i Roslagen.</span>
+      <a href="omrade.html">Fråga om ditt område →</a>
+    </div>
   </div>
 
   <div class="container hero">
@@ -42,7 +40,6 @@
 
 <main>
 
-  <!-- ===== Tjänster – teaser ===== -->
   <section class="container section" id="tjanster">
     <div class="callout">Uthyrning utan stress. Allt i ordning.</div>
     <div class="section">
@@ -70,22 +67,19 @@
     </div>
   </section>
 
-  <!-- ===== Kundreferenser ===== -->
   <section class="section" style="background:var(--col-accent);border-top:1px solid var(--col-line);border-bottom:1px solid var(--col-line);">
     <div class="container">
       <h2 style="font-family:Poppins, sans-serif; color:var(--col-primary-dark); margin-top:0;">Vad säger värdar?</h2>
       <div class="grid">
-        <!-- Anton -->
         <article class="card">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
-            <img src="bilder/anton.jpg?v=1" alt="Anton – Mariestad" style="width:56px;height:56px;border-radius:50%;object-fit:cover;" loading="lazy">
+            <img src="bilder/anton.jpeg?v=1" alt="Anton – Mariestad" style="width:56px;height:56px;border-radius:50%;object-fit:cover;" loading="lazy">
             <div>
               <strong>Anton</strong><br><span style="color:var(--col-text-2);font-size:14px;">Mariestad</span>
             </div>
           </div>
           <p>“Starten gick snabbt och strukturerat. Jag blev Superhost på kort tid – tack vare ordning, proaktiva tips och snabb gästkommunikation.”</p>
           <div aria-label="5 av 5" style="display:flex;gap:2px;margin-top:8px;">
-            <!-- 5 stjärnor som SVG -->
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A524" aria-hidden="true"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.848 1.417 8.261L12 19.771 4.583 23.857 6 15.596 0 9.748l8.332-1.73z"/></svg>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A524"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.848 1.417 8.261L12 19.771 4.583 23.857 6 15.596 0 9.748l8.332-1.73z"/></svg>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A524"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.848 1.417 8.261L12 19.771 4.583 23.857 6 15.596 0 9.748l8.332-1.73z"/></svg>
@@ -94,10 +88,9 @@
           </div>
         </article>
 
-        <!-- Filip -->
         <article class="card">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
-            <img src="bilder/filip.jpg?v=1" alt="Filip – Karlsborg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;" loading="lazy">
+            <img src="bilder/filip.jpeg?v=1" alt="Filip – Karlsborg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;" loading="lazy">
             <div>
               <strong>Filip</strong><br><span style="color:var(--col-text-2);font-size:14px;">Karlsborg</span>
             </div>
@@ -119,12 +112,10 @@
     </div>
   </section>
 
-  <!-- ===== Priser – inbäddat utdrag ===== -->
   <section class="pricing" id="priser">
     <div class="container">
       <h2>Tjänster & priser</h2>
       <div class="pricing-grid">
-        <!-- Bas -->
         <div class="pricing-card">
           <h3>Bas</h3>
           <p class="users">Bokning & gästkontakt</p>
@@ -137,7 +128,6 @@
             <li>Veckorapport</li>
           </ul>
         </div>
-        <!-- Standard -->
         <div class="pricing-card popular">
           <div class="ribbon">Populär</div>
           <h3>Standard</h3>
@@ -151,7 +141,6 @@
             <li>Gästguide</li>
           </ul>
         </div>
-        <!-- Fullservice -->
         <div class="pricing-card">
           <h3>Fullservice</h3>
           <p class="users">Nyckelklart – allt ingår</p>
@@ -165,7 +154,6 @@
             <li>Prisdynamik & optimering</li>
           </ul>
         </div>
-        <!-- Tillägg -->
         <div class="pricing-card">
           <h3>Tillägg</h3>
           <p class="users">Styckvis / engång</p>
@@ -187,7 +175,39 @@
     </div>
   </section>
 
-  <!-- ===== Område (teaser + karta) ===== -->
+  <section class="container section" id="faq">
+    <h2 style="font-family:Poppins,sans-serif;color:var(--col-primary-dark);margin-top:0;">Vanliga frågor</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Vem betalar städning och linne?</h3>
+        <p>Det kan debiteras gästen eller dig som värd. Vi rekommenderar pass‑through: gästen betalar och vi kvalitetssäkrar.</p>
+      </article>
+      <article class="card">
+        <h3>Kan jag pausa under vintern?</h3>
+        <p>Ja. Säg till i god tid så justerar vi kalender, prissättning och kommunikation.</p>
+      </article>
+      <article class="card">
+        <h3>Hur funkar nycklar?</h3>
+        <p>Kodlås eller nyckelbox är smidigast. Vi kan installera och administrera – eller sköta fysisk utlämning.</p>
+      </article>
+      <article class="card">
+        <h3>Jour – är ni tillgängliga dygnet runt?</h3>
+        <p>I Fullservice ingår 07–22. Dygnet‑runt kan erbjudas som tillägg vid behov.</p>
+      </article>
+      <article class="card">
+        <h3>Hur snabbt svarar ni gäster?</h3>
+        <p>Målsatt svarstid &lt; 1 timme dagtid. Automatiska mallar och bevakning säkrar snabba svar.</p>
+      </article>
+      <article class="card">
+        <h3>Hur binder jag upp mig?</h3>
+        <p>Start med 3 månaders bindtid, därefter löpande månadsvis uppsägning.</p>
+      </article>
+    </div>
+    <div style="margin-top:20px;">
+      <a class="btn btn-primary" href="boka-samtal.html">Boka gratis rådgivning</a>
+    </div>
+  </section>
+
   <section class="section" id="omrade" style="background:var(--col-accent);border-top:1px solid var(--col-line);border-bottom:1px solid var(--col-line);">
     <div class="container">
       <h2 style="font-family:Poppins,sans-serif;color:var(--col-primary-dark);margin-top:0;">Område – Roslagen & Norrort</h2>
@@ -211,12 +231,10 @@
             </iframe>
           </div>
         </article>
-
         <article class="card">
           <h3>Resor & tider</h3>
           <p>Standardtider 08–20. Resekostnad kan tillkomma vid längre avstånd eller ötrafik i skärgård. Vi planerar så att gästerna alltid möts i tid.</p>
         </article>
-
         <article class="card">
           <h3>Kodlås & nyckelbox</h3>
           <p>Vi rekommenderar kodlås/box för orter där logistik kan bli utmanande. Vi hjälper med val, installation och rutiner.</p>
@@ -225,7 +243,6 @@
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
   <section class="section">
     <div class="container" style="text-align:center;">
       <h2 style="font-family:Poppins,sans-serif;color:var(--col-primary-dark);margin:0 0 10px 0;">Redo för ett enklare värdskap?</h2>
@@ -238,20 +255,9 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
-      <div>
-        &copy; <span id="y"></span> Alltid Ordning — en tjänst från <strong>Stil & Struktur i Åkersberga AB</strong>.
-        <br>Org.nr 556784-7099 • Israel Perssons Väg 50, 184 70 Åkersberga
-      </div>
-      <div>
-        <a href="tel:+46707555010">070-755 50 10</a> &nbsp;•&nbsp;
-        <a href="mailto:kathrin.hallen@alltidordning.se">kathrin.hallen@alltidordning.se</a> &nbsp;•&nbsp;
-        <a href="mailto:info@alltidordning.se">info@alltidordning.se</a>
-      </div>
-    </div>
+    &copy; <span id="y"></span> Alltid Ordning — <strong>Stil & Struktur i Åkersberga AB</strong> • Org.nr 556784-7099
   </div>
 </footer>
-
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

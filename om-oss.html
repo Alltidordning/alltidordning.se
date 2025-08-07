@@ -6,36 +6,56 @@
   <title>Om oss – Alltid Ordning</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Lär känna teamet bakom Alltid Ordning – din lokala partner för uthyrning utan stress.">
+  <meta name="description" content="Alltid Ordning drivs av Kathrin Hallén – strukturerad, snabb och serviceinriktad co-host i Roslagen och Norrort.">
 </head>
 <body>
-
 <header class="site-header">
   <div class="container nav">
-    <div class="brand">Alltid Ordning</div>
+    <a class="brand" href="index.html">Alltid Ordning</a>
     <nav>
-      <a class="btn btn-ghost" href="index.html">Hem</a>
-      <a class="btn btn-ghost" href="prisexempel.html">Prisexempel</a>
-      <a class="btn btn-primary" href="kontakt.html">Kontakta oss</a>
+      <a class="btn btn-ghost" href="om-oss.html">Om oss</a>
+      <a class="btn btn-ghost" href="prisexempel.html">Tjänster & priser</a>
+      <a class="btn btn-ghost" href="omrade.html">Område</a>
+      <a class="btn btn-primary" href="boka-samtal.html">Boka samtal</a>
     </nav>
   </div>
 </header>
 
 <main class="container section">
-  <h1>Om oss</h1>
-  <div class="card" style="max-width:800px;">
-    <p><strong>Alltid Ordning</strong> är en lokal tjänst i Roslagen och Norrort som hjälper värdar att hyra ut sina boenden utan stress. Vi tar hand om allt från bokningshantering och gästkontakt till städning och nyckelutlämning.</p>
-    <p>Bakom Alltid Ordning står <strong>Katrin Hallén</strong>, som med öga för detaljer och känsla för service skapar trygghet för både värdar och gäster. Genom företaget <em>Stilo & Struktur i Åkersberga AB</em> har vi byggt en tjänst som förenklar och förbättrar uthyrningsupplevelsen.</p>
-    <p>Vi tror på långsiktiga samarbeten, lokal närvaro och ett värdskap som gör skillnad.</p>
+  <h1 style="font-family:Poppins,sans-serif;color:var(--col-primary-dark);margin-top:0;">Om oss</h1>
+
+  <div class="person-hero">
+    <img src="bilder/titti.jpg?v=1" alt="Kathrin Hallén – Alltid Ordning">
+    <div>
+      <h2 style="margin:0 0 8px 0;">Kathrin Hallén</h2>
+      <p>VD / Co-host. Jag ser till att din uthyrning rullar utan stress: bokningar, städning, nycklar och gästkontakt. Ordning, struktur och tydliga rutiner – så blir både gäster och värdar nöjda.</p>
+      <p style="margin-top:10px;"><a class="btn btn-primary" href="boka-samtal.html">Boka samtal</a> <a class="btn btn-ghost" href="mailto:kathrin.hallen@alltidordning.se">kathrin.hallen@alltidordning.se</a></p>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:24px;">
+    <div class="grid">
+      <article class="card">
+        <h3>Värdskap med struktur</h3>
+        <p>Vi jobbar med checklistor, uppföljning och proaktiv kommunikation för att minimera friktion och maximera betygen.</p>
+      </article>
+      <article class="card">
+        <h3>Nära dig i Roslagen</h3>
+        <p>Bas i Åkersberga – vi täcker Norrort och Roslagen. Smidig logistik och lokalkännedom.</p>
+      </article>
+      <article class="card">
+        <h3>Flexibelt upplägg</h3>
+        <p>Välj paket eller styckvisa tillägg. Starta litet, skala upp när det behövs.</p>
+      </article>
+    </div>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo & Struktur i Åkersberga AB.
+    &copy; <span id="y"></span> Alltid Ordning — <strong>Stil & Struktur i Åkersberga AB</strong> • Org.nr 556784-7099
   </div>
 </footer>
-
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

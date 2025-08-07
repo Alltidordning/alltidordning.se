@@ -4,20 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Område – Alltid Ordning</title>
-  <meta name="description" content="Vi erbjuder co-host-tjänster för värdar i Roslagen och Norrort. Fullservice, städning, nyckelhantering och gästkontakt.">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Vi erbjuder co-host-tjänster för värdar i Roslagen och Norrort. Fullservice, städning, nyckelhantering och gästkontakt.">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container nav">
-    <div class="brand">Alltid Ordning</div>
+    <a class="brand" href="index.html">Alltid Ordning</a>
     <nav>
-      <a href="index.html">Hem</a>
-      <a href="om-oss.html">Om oss</a>
-      <a href="prisexempel.html">Tjänster & priser</a>
-      <a href="omrade.html" class="active">Område</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a class="btn btn-ghost" href="om-oss.html">Om oss</a>
+      <a class="btn btn-ghost" href="prisexempel.html">Tjänster & priser</a>
+      <a class="btn btn-ghost" href="omrade.html">Område</a>
+      <a class="btn btn-primary" href="boka-samtal.html">Boka samtal</a>
     </nav>
   </div>
 </header>
@@ -27,11 +26,10 @@
 <section class="section">
   <div class="container">
     <h1>Område – Roslagen & Norrort</h1>
-    <p>Vi är baserade i Åkersberga och täcker ett stort område i Roslagen och Norrort. Vårt mål är att alltid finnas nära våra värdar och deras gäster – utan krångel eller förseningar.</p>
+    <p>Vi är baserade i Åkersberga och täcker ett stort område i Roslagen och Norrort. Vårt mål är att finnas nära både värdar och gäster.</p>
   </div>
 </section>
 
-<!-- ===== Zoner ===== -->
 <section class="section" style="background:var(--col-accent);border-top:1px solid var(--col-line);border-bottom:1px solid var(--col-line);">
   <div class="container">
     <h2>Våra zoner</h2>
@@ -45,7 +43,7 @@
       <article class="card">
         <h3>Närområde – fast tillägg</h3>
         <div class="chips">
-          <span>Vallentuna</span><span>Danderyd</span><span>Roslags-Kulla</span><span>Roslags-Näsby</span>
+          <span>Vallentuna</span><span>Danderyd</span><span>Roslags‑Kulla</span><span>Roslags‑Näsby</span>
         </div>
       </article>
       <article class="card">
@@ -55,17 +53,23 @@
         </div>
       </article>
     </div>
+
+    <div class="map-wrap" style="margin-top:16px;">
+      <iframe 
+        src="https://www.google.com/maps?q=Roslagen%2C%20Sverige&output=embed" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Karta Roslagen">
+      </iframe>
+    </div>
   </div>
 </section>
 
-<!-- ===== Chipplistor ===== -->
 <section class="section">
   <div class="container">
-    <h2>Våra fokusområden</h2>
+    <h2>Fokusområden</h2>
     <h3>Roslagen-fokus</h3>
     <div class="chips">
-      <span>Åkersberga</span><span>Österåker</span><span>Vaxholm</span><span>Roslags-Kulla</span>
-      <span>Roslags-Näsby</span><span>Norrtälje</span><span>Skärgården</span>
+      <span>Åkersberga</span><span>Österåker</span><span>Vaxholm</span><span>Roslags‑Kulla</span>
+      <span>Roslags‑Näsby</span><span>Norrtälje</span><span>Skärgården</span>
     </div>
     <h3 style="margin-top:20px;">Norrort-fokus</h3>
     <div class="chips">
@@ -75,12 +79,11 @@
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
 <section class="section" style="text-align:center;">
   <div class="container">
     <h2>Är ditt område med?</h2>
     <p>Vi kör gärna utanför listan om vi kan planera logistiken. Hör av dig så kollar vi möjligheterna.</p>
-    <a class="btn btn-primary" href="kontakt.html">Fråga om ditt område</a>
+    <a class="btn btn-primary" href="boka-samtal.html">Fråga om ditt område</a>
   </div>
 </section>
 
@@ -88,11 +91,9 @@
 
 <footer class="site-footer">
   <div class="container">
-    &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo & Struktur i Åkersberga AB.
-    <br>Org.nr 556784-7099 — Israel Perssons Väg 50, 184 70 Åkersberga
+    &copy; <span id="y"></span> Alltid Ordning — <strong>Stil & Struktur i Åkersberga AB</strong> • Org.nr 556784-7099
   </div>
 </footer>
-
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
