@@ -3,49 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Prisexempel – Alltid Ordning</title>
+  <title>Tjänster & priser – Alltid Ordning</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Se prisexempel för våra uthyrningstjänster – bokningshantering, städ, nycklar och gästkontakt.">
+  <meta name="description" content="Välj paket: Bas, Standard eller Fullservice. Uthyrning utan stress – Allt i ordning.">
 </head>
 <body>
-
 <header class="site-header">
   <div class="container nav">
     <div class="brand">Alltid Ordning</div>
     <nav>
       <a class="btn btn-ghost" href="index.html">Hem</a>
       <a class="btn btn-ghost" href="om-oss.html">Om oss</a>
+      <a class="btn btn-ghost" href="prisexempel.html">Prisexempel</a>
       <a class="btn btn-primary" href="kontakt.html">Kontakta oss</a>
     </nav>
   </div>
 </header>
 
-<main class="container section">
-  <h1>Prisexempel</h1>
-  <div class="grid">
-    <article class="card">
-      <h3>Bas – Från 1 500 kr/mån</h3>
-      <p>För dig som behöver hjälp med bokningshantering och gästkommunikation.</p>
-    </article>
-    <article class="card">
-      <h3>Standard – Från 3 500 kr/mån</h3>
-      <p>Bokningshantering, gästkommunikation och städning mellan gäster.</p>
-    </article>
-    <article class="card">
-      <h3>Premium – Från 5 000 kr/mån</h3>
-      <p>Fullservice inklusive nyckelutlämning, städning, bokningar och gästkontakt.</p>
-    </article>
+<section class="pricing">
+  <div class="container">
+    <h2>Våra paket</h2>
+    <div class="pricing-grid">
+
+      <!-- Bas -->
+      <div class="pricing-card">
+        <h3>Bas</h3>
+        <p class="users">Bokning & gästkontakt</p>
+        <p class="price">10–12% <span>/ per bokning</span></p>
+        <a class="btn ghost" href="kontakt.html">Boka samtal</a>
+        <ul>
+          <li>Gästkommunikation 08–20</li>
+          <li>Kalender & prissättning</li>
+          <li>Annonsoptimering</li>
+          <li>Veckorapport</li>
+        </ul>
+      </div>
+
+      <!-- Standard (Populär) -->
+      <div class="pricing-card popular">
+        <div class="ribbon">Populär</div>
+        <h3>Standard</h3>
+        <p class="users">Bokning, städ & besiktning</p>
+        <p class="price">15–17% <span>/ per bokning</span></p>
+        <a class="btn primary" href="kontakt.html">Boka samtal</a>
+        <ul>
+          <li>Allt i Bas</li>
+          <li>Städ & mellanbesiktning</li>
+          <li>Lagerpåfyllnad</li>
+          <li>Gästguide</li>
+        </ul>
+      </div>
+
+      <!-- Fullservice -->
+      <div class="pricing-card">
+        <h3>Fullservice</h3>
+        <p class="users">Nyckelklart – allt ingår</p>
+        <p class="price">18–20% <span>/ per bokning</span></p>
+        <a class="btn ghost" href="kontakt.html">Boka samtal</a>
+        <ul>
+          <li>Allt i Standard</li>
+          <li>Nyckelhantering</li>
+          <li>Jour 07–22</li>
+          <li>Leverantörssamordning</li>
+          <li>Prisdynamik & optimering</li>
+        </ul>
+      </div>
+
+      <!-- Tillägg -->
+      <div class="pricing-card">
+        <h3>Tillägg</h3>
+        <p class="users">Styckvis / engång</p>
+        <p class="price">Enligt prislista</p>
+        <a class="btn ghost" href="kontakt.html">Fråga oss</a>
+        <ul>
+          <li>Listing‑setup (text & bildurval)</li>
+          <li>Fotografering</li>
+          <li>Linne & tvätt (per set)</li>
+          <li>Djurstäd / djuprengöring</li>
+          <li>Kodlås/nyckelbox – installation & drift</li>
+        </ul>
+      </div>
+
+    </div>
+    <p style="margin-top:16px;color:var(--col-text-2);font-size:.95rem;">
+      Städ, linne och förbrukning debiteras separat (pass‑through). Hybridmodell möjlig: låg fast avgift + lägre procent.
+    </p>
   </div>
-  <p style="margin-top:24px; color:var(--col-text-2);">Priserna är exempel och kan anpassas efter boendets storlek, säsong och specifika behov.</p>
-</main>
+</section>
 
 <footer class="site-footer">
   <div class="container">
     &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo & Struktur i Åkersberga AB.
   </div>
 </footer>
-
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
