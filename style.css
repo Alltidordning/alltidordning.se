@@ -1,0 +1,102 @@
+
+/* ====== Design Tokens ====== */
+:root{
+  --col-primary: #446655;
+  --col-primary-dark: #2F463B;
+  --col-accent: #F4F1EC;
+  --col-accent-2: #E7E2D9;
+  --col-cta: #1F7A5A;
+  --col-cta-hover: #186147;
+  --col-text: #1F2A24;
+  --col-text-2: #5C6A63;
+  --col-line: #DAD6CF;
+  --col-ok: #2E7D32;
+  --col-warn: #C77800;
+  --col-err: #B00020;
+
+  --radius: 16px;
+  --shadow: 0 8px 20px rgba(0,0,0,.06);
+  --space: clamp(16px, 2.5vw, 24px);
+  --maxw: 1120px;
+}
+
+/* ====== Base ====== */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--col-text);
+  background:#fff;
+  line-height:1.6;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--col-cta);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ====== Layout ====== */
+.container{max-width:var(--maxw);margin:0 auto;padding:0 var(--space)}
+.section{padding:clamp(48px,6vw,96px) 0}
+
+/* ====== Header / Hero ====== */
+.site-header{
+  background: linear-gradient(0deg, rgba(68,102,85,.92), rgba(68,102,85,.92)), url('bilder/hero.jpg') center/cover no-repeat;
+  color:#fff;
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 0;
+}
+.brand{
+  font-family:"Poppins", sans-serif;
+  font-weight:700; letter-spacing:.3px; font-size:clamp(22px,2.6vw,28px);
+}
+.tagline{opacity:.9; font-size:14px}
+
+.hero{
+  padding: clamp(56px, 8vw, 120px) 0;
+}
+.hero h1{
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+  font-size: clamp(28px, 5.2vw, 48px);
+  margin:0 0 12px 0;
+}
+.hero p{font-size:clamp(16px,1.3vw,18px); max-width:56ch; opacity:.95}
+.hero .actions{margin-top:24px; display:flex; gap:12px; flex-wrap:wrap}
+
+/* ====== Buttons ====== */
+.btn{
+  display:inline-block; padding:12px 18px; border-radius:var(--radius);
+  font-weight:600; border:1px solid transparent; transition:.15s transform ease, .15s background ease, .15s color ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--col-cta); color:#fff}
+.btn-primary:hover{background:var(--col-cta-hover)}
+.btn-ghost{background:#fff; color:var(--col-primary-dark); border-color:var(--col-line)}
+.btn-ghost:hover{background:var(--col-accent-2)}
+
+/* ====== Cards ====== */
+.grid{display:grid; gap:clamp(16px,2vw,24px); grid-template-columns: repeat(auto-fit, minmax(260px,1fr));}
+.card{
+  background:var(--col-accent); border:1px solid var(--col-line);
+  border-radius:var(--radius); padding:24px; box-shadow:var(--shadow);
+}
+.card h3{
+  font-family:"Poppins", sans-serif; margin:0 0 8px 0; font-weight:600; color:var(--col-primary-dark)
+}
+.card p{margin:0; color:var(--col-text-2)}
+
+/* ====== Callout / Slogan ====== */
+.callout{
+  background:#fff; border:1px dashed var(--col-line); border-radius:var(--radius);
+  padding:20px; text-align:center; color:var(--col-primary-dark);
+  font-weight:600;
+}
+
+/* ====== Footer ====== */
+.site-footer{
+  background:var(--col-primary-dark); color:#fff;
+  padding:28px 0; font-size:14px;
+}
+.site-footer a{color:#fff; text-decoration:underline}
