@@ -1,1 +1,3 @@
-
+.logo { max-width: 320px; height: auto; transition: opacity 0.5s ease; }
+.fade-out { opacity: 0; }
+.fade-in { opacity: 1; }
