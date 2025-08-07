@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2000" height="500" viewBox="0 0 2000 500">
-<rect width="2000" height="500" fill="none"/>
+<rect width="2000" height="500" fill="#FFFFFF"/>
   <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        font-family="Poppins, Open Sans, Inter, Arial, sans-serif" font-weight="700"
-        font-size="200" fill="#2F4F4F">All Tid Ordning</text>
+        font-family="Poppins, Open Sans, Arial, sans-serif" font-weight="700"
+        font-size="200" fill="#31493E">All Tid Ordning</text>
 </svg>
