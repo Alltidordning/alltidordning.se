@@ -195,3 +195,14 @@ input[type], textarea, select {
   font-size: 0.72rem;
   letter-spacing: .5px;
 }
+
+/* ===== Chips (område) ===== */
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.chips span{
+  display:inline-block; padding:8px 10px; border-radius:999px;
+  background:#fff; border:1px solid var(--col-line); color:var(--col-primary-dark);
+  font-size:.9rem;
+}
+@media (max-width: 640px){
+  .chips span{ font-size:.85rem; padding:7px 9px; }
+}
