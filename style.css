@@ -254,3 +254,36 @@ body{ scroll-padding-top: 72px; }
 .person-hero{display:grid;grid-template-columns: 260px 1fr;gap:24px;align-items:center}
 .person-hero img{width:100%;height:auto;border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--col-line)}
 @media (max-width: 720px){ .person-hero{grid-template-columns:1fr} }
+
+#music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#playPauseBtn {
+  background-color: #31493E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#volumeControl {
+  width: 150px;
+  cursor: pointer;
+}
+
+#volumeLabel {
+  font-size: 14px;
+}
+
