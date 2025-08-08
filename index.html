@@ -266,22 +266,53 @@
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 <script src="/js/logo-rotator.js" defer></script>
 
+  <!-- Musikspelare -->
+  <audio id="background-music" loop autoplay>
+    <source src="audio/kathrin.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
   
-
+  <div id="music-player">
+    <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="changeVolume()" />
+    <span id="volumeLabel">Volume: 100%</span>
+  </div>
   
-<audio id="background-music" loop autoplay>
-  <source src="audio/kathrin.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
-
-<div id="music-player">
-  <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
-  <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="changeVolume()" />
-  <span id="volumeLabel">Volume: 100%</span>
-</div>
-
-
-
+  <script>
+    // Play/Pause function
+    function togglePlayPause() {
+      const audio = document.getElementById("background-music");
+      const button = document.getElementById("playPauseBtn");
   
+      if (audio.paused) {
+        audio.play();
+        button.textContent = "Pause";
+      } else {
+        audio.pause();
+        button.textContent = "Play";
+      }
+    }
+  
+    // Volume control
+    function changeVolume() {
+      const audio = document.getElementById("background-music");
+      const volumeControl = document.getElementById("volumeControl");
+      const volumeLabel = document.getElementById("volumeLabel");
+  
+      audio.volume = volumeControl.value;
+      volumeLabel.textContent = "Volume: " + Math.round(audio.volume * 100) + "%";
+    }
+  
+    // Initialize player state
+    window.onload = function() {
+      const audio = document.getElementById("background-music");
+      const volumeControl = document.getElementById("volumeControl");
+      const volumeLabel = document.getElementById("volumeLabel");
+  
+      audio.volume = volumeControl.value;
+      volumeLabel.textContent = "Volume: " + Math.round(audio.volume * 100) + "%";
+    };
+  </script>
+
 </body>
 </html>
