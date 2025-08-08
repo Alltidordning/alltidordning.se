@@ -265,6 +265,18 @@
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 <script src="/js/logo-rotator.js" defer></script>
+<audio id="background-music" loop autoplay>
+  <source src="audio/kathrin.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
 
+<div id="music-player">
+  <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="changeVolume()" />
+  <span id="volumeLabel">Volume: 100%</span>
+</div>
+
+
+  
 </body>
 </html>
