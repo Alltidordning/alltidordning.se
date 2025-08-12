@@ -27,36 +27,39 @@
     </div>
 
     <p style="color:var(--col-text-2); font-size:14px; margin-top:12px;">
-      Postadress: Stil & Struktur i Åkersberga AB, Israel Perssons Väg 50, 184 70 Åkersberga • Org.nr 556784‑7099
+      Postadress: Stil &amp; Struktur i Åkersberga AB, Israel Perssons Väg 50, 184 70 Åkersberga<br>
+      Org.nr 556784‑7099
     </p>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo & Struktur i Åkersberga AB.
+    &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo &amp; Struktur i Åkersberga AB.
   </div>
 </footer>
 <script>
-document.getElementById('y').textContent = new Date().getFullYear();
-const btn = document.getElementById('copyBtn');
-const email = document.getElementById('email').textContent.trim();
-btn?.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(email);
-    btn.textContent = 'Kopierad!';
-    setTimeout(() => btn.textContent = 'Kopiera', 1500);
-  } catch(e) {
-    const ta = document.createElement('textarea');
-    ta.value = email;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-    btn.textContent = 'Kopierad!';
-    setTimeout(() => btn.textContent = 'Kopiera', 1500);
-  }
-});
+  document.getElementById('y').textContent = new Date().getFullYear();
+  (function(){
+    const btn = document.getElementById('copyBtn');
+    const email = document.getElementById('email').textContent.trim();
+    btn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(email);
+        btn.textContent = 'Kopierad!';
+        setTimeout(() => btn.textContent = 'Kopiera', 1500);
+      } catch(e) {
+        const ta = document.createElement('textarea');
+        ta.value = email;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.textContent = 'Kopierad!';
+        setTimeout(() => btn.textContent = 'Kopiera', 1500);
+      }
+    });
+  })();
 </script>
 </body>
 </html>
