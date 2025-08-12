@@ -15,24 +15,18 @@
 
   <div class="card" style="max-width:720px;">
     <p style="display:flex;gap:12px;flex-wrap:wrap;">
-      <!-- Primär knapp: öppnar e-postklient om sådan finns -->
-      <a class="btn btn-primary"
-         href="mailto:kontakt@alltidordning.se?subject=Intresse%20%E2%80%93%20Alltid%20Ordning&body=Hej!%0D%0A%0D%0AJag vill ha hj%C3%A4lp med uthyrning.%0D%0ABoende/Ort:%20%0D%0ATelefon:%20%0D%0A%0D%0ATack!">
-         Maila oss
-      </a>
+      <a class="btn btn-primary" href="mailto:kontakt@alltidordning.se?subject=Intresse%20%E2%80%93%20Alltid%20Ordning&body=Hej!%0D%0A%0D%0AJag vill ha hj%C3%A4lp med uthyrning.%0D%0ABoende/Ort:%20%0D%0ATelefon:%20%0D%0A%0D%0ATack!">Maila oss</a>
       <a class="btn btn-ghost" href="tel:+46707555010">Ring 070‑755 50 10</a>
     </p>
 
-    <!-- Fallback: tydlig adress + kopiera-knapp -->
     <div style="margin-top:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
       <span style="color:var(--col-text-2);font-size:14px;">Fungerar inte mailknappen?</span>
       <span id="email" style="font-weight:600;">kontakt@alltidordning.se</span>
       <button id="copyBtn" class="btn btn-ghost" type="button" style="padding:6px 10px;font-size:14px;">Kopiera</button>
-      <!-- Direkt klickbar länk också -->
       <a href="mailto:kontakt@alltidordning.se" style="font-size:14px;">Öppna i e‑post</a>
     </div>
 
-    <p style="color:var(--col-text-2); font-size:14px; margin-top:14px;">
+    <p style="color:var(--col-text-2); font-size:14px; margin-top:12px;">
       Postadress: Stil & Struktur i Åkersberga AB, Israel Perssons Väg 50, 184 70 Åkersberga • Org.nr 556784‑7099
     </p>
   </div>
@@ -43,32 +37,26 @@
     &copy; <span id="y"></span> Alltid Ordning — en tjänst från Stilo & Struktur i Åkersberga AB.
   </div>
 </footer>
-
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-
-  // Kopiera e-postadress till urklipp
-  (function(){
-    const btn = document.getElementById('copyBtn');
-    const email = document.getElementById('email').textContent.trim();
-    btn?.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(email);
-        btn.textContent = 'Kopierad!';
-        setTimeout(() => btn.textContent = 'Kopiera', 1500);
-      } catch(e) {
-        // Fallback om Clipboard API inte finns
-        const ta = document.createElement('textarea');
-        ta.value = email;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        btn.textContent = 'Kopierad!';
-        setTimeout(() => btn.textContent = 'Kopiera', 1500);
-      }
-    });
-  })();
+document.getElementById('y').textContent = new Date().getFullYear();
+const btn = document.getElementById('copyBtn');
+const email = document.getElementById('email').textContent.trim();
+btn?.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(email);
+    btn.textContent = 'Kopierad!';
+    setTimeout(() => btn.textContent = 'Kopiera', 1500);
+  } catch(e) {
+    const ta = document.createElement('textarea');
+    ta.value = email;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = 'Kopierad!';
+    setTimeout(() => btn.textContent = 'Kopiera', 1500);
+  }
+});
 </script>
 </body>
 </html>
